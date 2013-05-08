@@ -11,8 +11,8 @@
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>FSharpWcfServiceApplicationTemplate</RootNamespace>
-    <AssemblyName>Web</AssemblyName>
+    <RootNamespace>AsianOptionsServiceFSharp.Web</RootNamespace>
+    <AssemblyName>AsianOptionsServiceFSharp.Web</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
@@ -86,6 +86,9 @@
       <Project>{88EB4774-51A2-4BF7-874C-009A0C3B3ADD}</Project>
       <Name>AsianOptionsServiceFSharpLib.Services</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AsianOptionsServiceFSharp.config" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
