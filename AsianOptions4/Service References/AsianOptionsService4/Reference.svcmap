@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="85c6f75e-0be7-40f6-bded-5452cfca5690" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:5807/AsianOptions4.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="AsianOptions4.xsd" MetadataType="Schema" ID="2844bea6-af18-4652-94c1-fbc1d758984b" SourceId="1" SourceUrl="http://localhost:5807/AsianOptions4.svc?xsd=xsd0" />
+    <MetadataFile FileName="AsianOptions4.wsdl" MetadataType="Wsdl" ID="3e62e881-778e-4781-8749-f21ad3cb92d6" SourceId="1" SourceUrl="http://localhost:5807/AsianOptions4.svc?wsdl" />
+    <MetadataFile FileName="AsianOptions41.xsd" MetadataType="Schema" ID="6ea839d6-ebb8-4c44-8d2b-a9e571a305bc" SourceId="1" SourceUrl="http://localhost:5807/AsianOptions4.svc?xsd=xsd1" />
+    <MetadataFile FileName="AsianOptions4.disco" MetadataType="Disco" ID="53571cc2-113e-4d6a-8c81-39b65ee15f3c" SourceId="1" SourceUrl="http://localhost:5807/AsianOptions4.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

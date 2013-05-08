@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="c6c2d258-1b46-481f-95f2-5c34733d32e7" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>true</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:21930/AsianOptions.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="AsianOptions.xsd" MetadataType="Schema" ID="f3aa159c-cddb-4703-9645-cc3fd6dc5b72" SourceId="1" SourceUrl="http://localhost:21930/AsianOptions.svc?xsd=xsd0" />
+    <MetadataFile FileName="AsianOptions.disco" MetadataType="Disco" ID="b6e99922-d478-4e0f-aaa5-638f60c79d42" SourceId="1" SourceUrl="http://localhost:21930/AsianOptions.svc?disco" />
+    <MetadataFile FileName="AsianOptions.wsdl" MetadataType="Wsdl" ID="bd4800c1-cfd1-46ae-980a-4e36382be7a4" SourceId="1" SourceUrl="http://localhost:21930/AsianOptions.svc?wsdl" />
+    <MetadataFile FileName="AsianOptions1.xsd" MetadataType="Schema" ID="d76c9673-0da1-4b75-a2cb-7feb00d749a7" SourceId="1" SourceUrl="http://localhost:21930/AsianOptions.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
