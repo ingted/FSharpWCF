@@ -117,6 +117,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="Service References\AsianOptionsServiceFSharp\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Service References\FRAsianOptionsService4\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -182,6 +187,13 @@
     <None Include="Service References\AsianOptionsService4\AsianOptions41.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Service References\AsianOptionsServiceFSharp\AsianOptionsFSharp.wsdl" />
+    <None Include="Service References\AsianOptionsServiceFSharp\AsianOptionsFSharp.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AsianOptionsServiceFSharp\AsianOptionsFSharp1.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Service References\FRAsianOptionsService4\AsianOptions4.FRAsianOptionsService4.PriceAsianOptionsResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
@@ -216,6 +228,7 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Service References\AsianOptionsService4\" />
+    <WCFMetadataStorage Include="Service References\AsianOptionsServiceFSharp\" />
     <WCFMetadataStorage Include="Service References\FRAsianOptionsService4\" />
   </ItemGroup>
   <ItemGroup>
@@ -244,6 +257,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Service References\FRAsianOptionsService4\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\AsianOptionsServiceFSharp\AsianOptionsFSharp.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\AsianOptionsServiceFSharp\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\AsianOptionsServiceFSharp\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\AsianOptionsServiceFSharp\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
