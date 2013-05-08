@@ -7,7 +7,7 @@ open System.ServiceModel
 type IAsianOptionsServiceFSharp =
     [<OperationContract>]
     abstract PriceAsianOptions : initial:float * exercise:float * up:float *
-            down:float * interest:float * periods:int32 * runs:int -> float;
+            down:float * interest:float * periods:int32 * runs:int32 -> float;
 
 
 
