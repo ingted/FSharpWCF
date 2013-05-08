@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace AsianOptions4.AsianOptionsServiceFSharp {
+namespace AsianOptionsFSharp.AsianOptionsServiceFSharp {
     
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -25,7 +25,7 @@ namespace AsianOptions4.AsianOptionsServiceFSharp {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface IAsianOptionsServiceFSharpChannel : AsianOptions4.AsianOptionsServiceFSharp.IAsianOptionsServiceFSharp, System.ServiceModel.IClientChannel {
+    public interface IAsianOptionsServiceFSharpChannel : AsianOptionsFSharp.AsianOptionsServiceFSharp.IAsianOptionsServiceFSharp, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -49,7 +49,7 @@ namespace AsianOptions4.AsianOptionsServiceFSharp {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class AsianOptionsServiceFSharpClient : System.ServiceModel.ClientBase<AsianOptions4.AsianOptionsServiceFSharp.IAsianOptionsServiceFSharp>, AsianOptions4.AsianOptionsServiceFSharp.IAsianOptionsServiceFSharp {
+    public partial class AsianOptionsServiceFSharpClient : System.ServiceModel.ClientBase<AsianOptionsFSharp.AsianOptionsServiceFSharp.IAsianOptionsServiceFSharp>, AsianOptionsFSharp.AsianOptionsServiceFSharp.IAsianOptionsServiceFSharp {
         
         private BeginOperationDelegate onBeginPriceAsianOptionsDelegate;
         

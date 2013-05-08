@@ -7,16 +7,16 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <OutputType>Library</OutputType>
     <NoStandardLibraries>false</NoStandardLibraries>
-    <RootNamespace>AsianOptions4</RootNamespace>
-    <AssemblyName>AsianOptions4</AssemblyName>
-    <VSTO_HostDocumentName>AsianOptionPricingCSharpBehind.xlsx</VSTO_HostDocumentName>
+    <RootNamespace>AsianOptionsFSharp</RootNamespace>
+    <AssemblyName>AsianOptionsFSharp</AssemblyName>
+    <VSTO_HostDocumentName>AsianOptionPricingFSharpBehind.xlsx</VSTO_HostDocumentName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <DefineConstants>VSTO40</DefineConstants>
     <OfficeApplication>Excel</OfficeApplication>
     <BootstrapperEnabled>true</BootstrapperEnabled>
     <BootstrapperComponentsLocation>HomeSite</BootstrapperComponentsLocation>
-    <ProjectGuid>{B125965A-0F03-48CC-A7D5-F90F9B4F8260}</ProjectGuid>
-    <SolutionID>ab0313c4-085e-4b13-8e47-2e8e4558b69a</SolutionID>
+    <ProjectGuid>{9EC05064-0A07-4FAE-831A-AE791213A0A0}</ProjectGuid>
+    <SolutionID>cb43d288-b00b-4984-9c74-62e3a1873755</SolutionID>
   </PropertyGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5">
@@ -112,36 +112,31 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Service References\AsianOptionsService4\Reference.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Compile>
-    <Compile Include="Service References\FRAsianOptionsService4\Reference.cs">
+    <Compile Include="Service References\AsianOptionsServiceFSharp\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
     <Compile Include="Sheet1.cs">
-      <DependentUpon>AsianOptionPricingCSharpBehind.xlsx</DependentUpon>
+      <DependentUpon>AsianOptionPricingFSharpBehind.xlsx</DependentUpon>
     </Compile>
     <Compile Include="Sheet1.Designer.cs">
       <DependentUpon>Sheet1.Designer.xml</DependentUpon>
     </Compile>
     <Compile Include="Sheet2.cs">
-      <DependentUpon>AsianOptionPricingCSharpBehind.xlsx</DependentUpon>
+      <DependentUpon>AsianOptionPricingFSharpBehind.xlsx</DependentUpon>
     </Compile>
     <Compile Include="Sheet2.Designer.cs">
       <DependentUpon>Sheet2.Designer.xml</DependentUpon>
     </Compile>
     <Compile Include="Sheet3.cs">
-      <DependentUpon>AsianOptionPricingCSharpBehind.xlsx</DependentUpon>
+      <DependentUpon>AsianOptionPricingFSharpBehind.xlsx</DependentUpon>
     </Compile>
     <Compile Include="Sheet3.Designer.cs">
       <DependentUpon>Sheet3.Designer.xml</DependentUpon>
     </Compile>
     <Compile Include="ThisWorkbook.cs">
-      <DependentUpon>AsianOptionPricingCSharpBehind.xlsx</DependentUpon>
+      <DependentUpon>AsianOptionPricingFSharpBehind.xlsx</DependentUpon>
     </Compile>
     <Compile Include="ThisWorkbook.Designer.cs">
       <DependentUpon>ThisWorkbook.Designer.xml</DependentUpon>
@@ -158,12 +153,9 @@
     <EmbeddedResource Include="Sheet1.resx">
       <DependentUpon>Sheet1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Sheet2.resx">
-      <DependentUpon>Sheet2.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="app.config" />
-    <None Include="AsianOptionPricingCSharpBehind.xlsx" />
-    <None Include="AsianOptions4_TemporaryKey.pfx" />
+    <None Include="AsianOptionPricingFSharpBehind.xlsx" />
+    <None Include="AsianOptionsFSharp_TemporaryKey.pfx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -173,25 +165,15 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Service References\AsianOptionsServiceFSharp\AsianOptionsFSharp.wsdl" />
+    <None Include="Service References\AsianOptionsServiceFSharp\AsianOptionsFSharp.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AsianOptionsServiceFSharp\AsianOptionsFSharp1.xsd">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\AsianOptionsService4\AsianOptions4.wsdl" />
-    <None Include="Service References\AsianOptionsService4\AsianOptions4.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Service References\AsianOptionsService4\AsianOptions41.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Service References\FRAsianOptionsService4\AsianOptions4.FRAsianOptionsService4.PriceAsianOptionsResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\FRAsianOptionsService4\AsianOptions4.wsdl" />
-    <None Include="Service References\FRAsianOptionsService4\AsianOptions4.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Service References\FRAsianOptionsService4\AsianOptions41.xsd">
-      <SubType>Designer</SubType>
-    </None>
     <None Include="ThisWorkbook.Designer.xml">
       <DependentUpon>ThisWorkbook.cs</DependentUpon>
     </None>
@@ -215,35 +197,19 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Service References\AsianOptionsService4\" />
-    <WCFMetadataStorage Include="Service References\FRAsianOptionsService4\" />
+    <WCFMetadataStorage Include="Service References\AsianOptionsServiceFSharp\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\AsianOptionsService4\AsianOptions4.disco" />
+    <None Include="Service References\AsianOptionsServiceFSharp\AsianOptionsFSharp.disco" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\AsianOptionsService4\configuration91.svcinfo" />
+    <None Include="Service References\AsianOptionsServiceFSharp\configuration91.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\AsianOptionsService4\configuration.svcinfo" />
+    <None Include="Service References\AsianOptionsServiceFSharp\configuration.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\AsianOptionsService4\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\FRAsianOptionsService4\AsianOptions4.disco" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\FRAsianOptionsService4\configuration91.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\FRAsianOptionsService4\configuration.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\FRAsianOptionsService4\Reference.svcmap">
+    <None Include="Service References\AsianOptionsServiceFSharp\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
@@ -256,24 +222,18 @@
     <SignManifests>true</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>AsianOptions4_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestKeyFile>AsianOptionsFSharp_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>D87B6B242F9E4FFA66496DB76E2916298F763561</ManifestCertificateThumbprint>
-  </PropertyGroup>
-  <PropertyGroup>
-    <SignAssembly>true</SignAssembly>
-  </PropertyGroup>
-  <PropertyGroup>
-    <AssemblyOriginatorKeyFile>AsianOptions4_TemporaryKey.pfx</AssemblyOriginatorKeyFile>
+    <ManifestCertificateThumbprint>4D97D8261E38FE85EB87071A1D467E9413AE0346</ManifestCertificateThumbprint>
   </PropertyGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\OfficeTools\Microsoft.VisualStudio.Tools.Office.targets" Condition="'$(VSToolsPath)' != ''" />
   <ProjectExtensions>
     <VisualStudio>
       <FlavorProperties GUID="{BAA0C2D2-18E2-41B9-852F-F413020CAA33}">
-        <ProjectProperties HostName="AsianOptionPricingCSharpBehind.xlsx" HostPackage="{3F2B7691-D1D1-402F-9370-2704A737CF60}" OfficeVersion="15.0" VstxVersion="4.0" ApplicationType="XLS" Language="CS" TemplatesPath="VSTOTemplates" DebugInfoExeName="C:\Program Files\Microsoft Office\Office15\Excel.exe" DebugInfoCommandLine="/x &quot;[$OUTPUT]AsianOptionPricingCSharpBehind.xlsx&quot;" />
-        <Host Name="Excel Document" Path=".\AsianOptionPricingCSharpBehind.xlsx" GeneratedCodeNamespace="AsianOptions4">
+        <ProjectProperties HostName="AsianOptionPricingFSharpBehind.xlsx" HostPackage="{3F2B7691-D1D1-402F-9370-2704A737CF60}" OfficeVersion="15.0" VstxVersion="4.0" ApplicationType="XLS" Language="CS" TemplatesPath="VSTOTemplates" DebugInfoExeName="C:\Program Files\Microsoft Office\Office15\Excel.exe" DebugInfoCommandLine="/x &quot;[$OUTPUT]AsianOptionPricingFSharpBehind.xlsx&quot;" />
+        <Host Name="Excel Document" Path=".\AsianOptionPricingFSharpBehind.xlsx" GeneratedCodeNamespace="AsianOptionsFSharp">
           <HostItem Name="Sheet1" Code="Sheet1.cs" CanonicalName="Sheet1" DisplayName="Sheet1" Blueprint="Sheet1.Designer.xml" GeneratedCode="Sheet1.Designer.cs" />
           <HostItem Name="Sheet2" Code="Sheet2.cs" CanonicalName="Sheet2" DisplayName="Sheet2" Blueprint="Sheet2.Designer.xml" GeneratedCode="Sheet2.Designer.cs" />
           <HostItem Name="Sheet3" Code="Sheet3.cs" CanonicalName="Sheet3" DisplayName="Sheet3" Blueprint="Sheet3.Designer.xml" GeneratedCode="Sheet3.Designer.cs" />

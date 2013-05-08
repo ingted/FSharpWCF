@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="ad30c567-5def-418b-808e-ae5d6903c37e" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="b734c543-8d25-4fbc-a136-9deaf06ad7a8" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
     <EnableDataBinding>true</EnableDataBinding>
@@ -21,10 +21,10 @@
     <MetadataSource Address="http://localhost:5125/AsianOptionsFSharp.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="AsianOptionsFSharp.xsd" MetadataType="Schema" ID="904405f4-c592-4f16-b3cf-f537dd1185ec" SourceId="1" SourceUrl="http://localhost:5125/AsianOptionsFSharp.svc?xsd=xsd1" />
-    <MetadataFile FileName="AsianOptionsFSharp.wsdl" MetadataType="Wsdl" ID="822b7fd4-0cf5-48a0-bd8d-9cccebd00e1a" SourceId="1" SourceUrl="http://localhost:5125/AsianOptionsFSharp.svc?wsdl" />
-    <MetadataFile FileName="AsianOptionsFSharp1.xsd" MetadataType="Schema" ID="f2da6eeb-1231-4c67-83c2-9c16d34bcf7c" SourceId="1" SourceUrl="http://localhost:5125/AsianOptionsFSharp.svc?xsd=xsd0" />
-    <MetadataFile FileName="AsianOptionsFSharp.disco" MetadataType="Disco" ID="366ddba6-0e4f-46bc-8582-71c6983e23f9" SourceId="1" SourceUrl="http://localhost:5125/AsianOptionsFSharp.svc?disco" />
+    <MetadataFile FileName="AsianOptionsFSharp.xsd" MetadataType="Schema" ID="03193bb1-3e8e-4239-83a2-9adb09a8b26d" SourceId="1" SourceUrl="http://localhost:5125/AsianOptionsFSharp.svc?xsd=xsd1" />
+    <MetadataFile FileName="AsianOptionsFSharp.wsdl" MetadataType="Wsdl" ID="e13d7796-86df-4dd6-ad04-e86f3fd43bb3" SourceId="1" SourceUrl="http://localhost:5125/AsianOptionsFSharp.svc?wsdl" />
+    <MetadataFile FileName="AsianOptionsFSharp1.xsd" MetadataType="Schema" ID="2dd3c129-51d0-4164-8919-d77e2bf1cd1c" SourceId="1" SourceUrl="http://localhost:5125/AsianOptionsFSharp.svc?xsd=xsd0" />
+    <MetadataFile FileName="AsianOptionsFSharp.disco" MetadataType="Disco" ID="56431c69-0953-41ac-91ed-3fc44fa428fc" SourceId="1" SourceUrl="http://localhost:5125/AsianOptionsFSharp.svc?disco" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
