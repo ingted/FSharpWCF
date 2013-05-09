@@ -1,4 +1,4 @@
-﻿namespace AsianOptionsServiceFSharpLib.Services
+﻿namespace AsianOptionsServiceFSharpLib
 
 open System
 open AsianOptionsServiceFSharpLib.Contracts
