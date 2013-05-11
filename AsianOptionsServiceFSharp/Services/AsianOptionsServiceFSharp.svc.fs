@@ -1,11 +1,13 @@
 ﻿namespace AsianOptionsServiceFSharpLib
 
 open System
+open System.ServiceModel
 open AsianOptionsServiceFSharpLib.Contracts
 
+[<ServiceBehavior(ConfigurationName="AsianOptionsServiceFSharpLib") >] 
 type AsianOptionsFSharp() =
     interface IAsianOptionsServiceFSharp with
-        override this.PriceAsianOptions(initial:float, exercise:float, up:float
+        member this.PriceAsianOptions(initial:float, exercise:float, up:float
             , down:float, interest:float, periods:int32, runs:int32) = 
             let pricePath = Array.create (periods + 1) 0.0
             let piup = (interest - down) / (up - down)

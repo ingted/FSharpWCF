@@ -15,13 +15,13 @@ namespace AsianOptionsFSharp.AsianOptionsServiceFSharp {
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="AsianOptionsServiceFSharp.IAsianOptionsServiceFSharp")]
     public interface IAsianOptionsServiceFSharp {
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAsianOptionsServiceFSharp/PriceAsianOptions", ReplyAction="http://tempuri.org/IAsianOptionsServiceFSharp/PriceAsianOptionsResponse")]
-        double PriceAsianOptions(double initial, double exercise, double up, double down, double interest, int periods, int runs);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAsianOptionsServiceFSharp/PAO", ReplyAction="http://tempuri.org/IAsianOptionsServiceFSharp/PAOResponse")]
+        double PAO(double initial, double exercise, double up, double down, double interest, int periods, int runs);
         
-        [System.ServiceModel.OperationContractAttribute(AsyncPattern=true, Action="http://tempuri.org/IAsianOptionsServiceFSharp/PriceAsianOptions", ReplyAction="http://tempuri.org/IAsianOptionsServiceFSharp/PriceAsianOptionsResponse")]
-        System.IAsyncResult BeginPriceAsianOptions(double initial, double exercise, double up, double down, double interest, int periods, int runs, System.AsyncCallback callback, object asyncState);
+        [System.ServiceModel.OperationContractAttribute(AsyncPattern=true, Action="http://tempuri.org/IAsianOptionsServiceFSharp/PAO", ReplyAction="http://tempuri.org/IAsianOptionsServiceFSharp/PAOResponse")]
+        System.IAsyncResult BeginPAO(double initial, double exercise, double up, double down, double interest, int periods, int runs, System.AsyncCallback callback, object asyncState);
         
-        double EndPriceAsianOptions(System.IAsyncResult result);
+        double EndPAO(System.IAsyncResult result);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -30,11 +30,11 @@ namespace AsianOptionsFSharp.AsianOptionsServiceFSharp {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class PriceAsianOptionsCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+    public partial class PAOCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
         
         private object[] results;
         
-        public PriceAsianOptionsCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+        public PAOCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
                 base(exception, cancelled, userState) {
             this.results = results;
         }
@@ -51,11 +51,11 @@ namespace AsianOptionsFSharp.AsianOptionsServiceFSharp {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     public partial class AsianOptionsServiceFSharpClient : System.ServiceModel.ClientBase<AsianOptionsFSharp.AsianOptionsServiceFSharp.IAsianOptionsServiceFSharp>, AsianOptionsFSharp.AsianOptionsServiceFSharp.IAsianOptionsServiceFSharp {
         
-        private BeginOperationDelegate onBeginPriceAsianOptionsDelegate;
+        private BeginOperationDelegate onBeginPAODelegate;
         
-        private EndOperationDelegate onEndPriceAsianOptionsDelegate;
+        private EndOperationDelegate onEndPAODelegate;
         
-        private System.Threading.SendOrPostCallback onPriceAsianOptionsCompletedDelegate;
+        private System.Threading.SendOrPostCallback onPAOCompletedDelegate;
         
         public AsianOptionsServiceFSharpClient() {
         }
@@ -76,23 +76,23 @@ namespace AsianOptionsFSharp.AsianOptionsServiceFSharp {
                 base(binding, remoteAddress) {
         }
         
-        public event System.EventHandler<PriceAsianOptionsCompletedEventArgs> PriceAsianOptionsCompleted;
+        public event System.EventHandler<PAOCompletedEventArgs> PAOCompleted;
         
-        public double PriceAsianOptions(double initial, double exercise, double up, double down, double interest, int periods, int runs) {
-            return base.Channel.PriceAsianOptions(initial, exercise, up, down, interest, periods, runs);
+        public double PAO(double initial, double exercise, double up, double down, double interest, int periods, int runs) {
+            return base.Channel.PAO(initial, exercise, up, down, interest, periods, runs);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        public System.IAsyncResult BeginPriceAsianOptions(double initial, double exercise, double up, double down, double interest, int periods, int runs, System.AsyncCallback callback, object asyncState) {
-            return base.Channel.BeginPriceAsianOptions(initial, exercise, up, down, interest, periods, runs, callback, asyncState);
+        public System.IAsyncResult BeginPAO(double initial, double exercise, double up, double down, double interest, int periods, int runs, System.AsyncCallback callback, object asyncState) {
+            return base.Channel.BeginPAO(initial, exercise, up, down, interest, periods, runs, callback, asyncState);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        public double EndPriceAsianOptions(System.IAsyncResult result) {
-            return base.Channel.EndPriceAsianOptions(result);
+        public double EndPAO(System.IAsyncResult result) {
+            return base.Channel.EndPAO(result);
         }
         
-        private System.IAsyncResult OnBeginPriceAsianOptions(object[] inValues, System.AsyncCallback callback, object asyncState) {
+        private System.IAsyncResult OnBeginPAO(object[] inValues, System.AsyncCallback callback, object asyncState) {
             double initial = ((double)(inValues[0]));
             double exercise = ((double)(inValues[1]));
             double up = ((double)(inValues[2]));
@@ -100,44 +100,44 @@ namespace AsianOptionsFSharp.AsianOptionsServiceFSharp {
             double interest = ((double)(inValues[4]));
             int periods = ((int)(inValues[5]));
             int runs = ((int)(inValues[6]));
-            return this.BeginPriceAsianOptions(initial, exercise, up, down, interest, periods, runs, callback, asyncState);
+            return this.BeginPAO(initial, exercise, up, down, interest, periods, runs, callback, asyncState);
         }
         
-        private object[] OnEndPriceAsianOptions(System.IAsyncResult result) {
-            double retVal = this.EndPriceAsianOptions(result);
+        private object[] OnEndPAO(System.IAsyncResult result) {
+            double retVal = this.EndPAO(result);
             return new object[] {
                     retVal};
         }
         
-        private void OnPriceAsianOptionsCompleted(object state) {
-            if ((this.PriceAsianOptionsCompleted != null)) {
+        private void OnPAOCompleted(object state) {
+            if ((this.PAOCompleted != null)) {
                 InvokeAsyncCompletedEventArgs e = ((InvokeAsyncCompletedEventArgs)(state));
-                this.PriceAsianOptionsCompleted(this, new PriceAsianOptionsCompletedEventArgs(e.Results, e.Error, e.Cancelled, e.UserState));
+                this.PAOCompleted(this, new PAOCompletedEventArgs(e.Results, e.Error, e.Cancelled, e.UserState));
             }
         }
         
-        public void PriceAsianOptionsAsync(double initial, double exercise, double up, double down, double interest, int periods, int runs) {
-            this.PriceAsianOptionsAsync(initial, exercise, up, down, interest, periods, runs, null);
+        public void PAOAsync(double initial, double exercise, double up, double down, double interest, int periods, int runs) {
+            this.PAOAsync(initial, exercise, up, down, interest, periods, runs, null);
         }
         
-        public void PriceAsianOptionsAsync(double initial, double exercise, double up, double down, double interest, int periods, int runs, object userState) {
-            if ((this.onBeginPriceAsianOptionsDelegate == null)) {
-                this.onBeginPriceAsianOptionsDelegate = new BeginOperationDelegate(this.OnBeginPriceAsianOptions);
+        public void PAOAsync(double initial, double exercise, double up, double down, double interest, int periods, int runs, object userState) {
+            if ((this.onBeginPAODelegate == null)) {
+                this.onBeginPAODelegate = new BeginOperationDelegate(this.OnBeginPAO);
             }
-            if ((this.onEndPriceAsianOptionsDelegate == null)) {
-                this.onEndPriceAsianOptionsDelegate = new EndOperationDelegate(this.OnEndPriceAsianOptions);
+            if ((this.onEndPAODelegate == null)) {
+                this.onEndPAODelegate = new EndOperationDelegate(this.OnEndPAO);
             }
-            if ((this.onPriceAsianOptionsCompletedDelegate == null)) {
-                this.onPriceAsianOptionsCompletedDelegate = new System.Threading.SendOrPostCallback(this.OnPriceAsianOptionsCompleted);
+            if ((this.onPAOCompletedDelegate == null)) {
+                this.onPAOCompletedDelegate = new System.Threading.SendOrPostCallback(this.OnPAOCompleted);
             }
-            base.InvokeAsync(this.onBeginPriceAsianOptionsDelegate, new object[] {
+            base.InvokeAsync(this.onBeginPAODelegate, new object[] {
                         initial,
                         exercise,
                         up,
                         down,
                         interest,
                         periods,
-                        runs}, this.onEndPriceAsianOptionsDelegate, this.onPriceAsianOptionsCompletedDelegate, userState);
+                        runs}, this.onEndPAODelegate, this.onPAOCompletedDelegate, userState);
         }
     }
 }

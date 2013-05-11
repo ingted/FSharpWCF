@@ -85,7 +85,7 @@ namespace AsianOptionsFSharp
                     {
                         for (int i = 2; i <= 11; i++)
                         {
-                            client.BeginPriceAsianOptions(
+                            client.BeginPAO(
                                 initial,
                                 exercise,
                                 up,
@@ -95,7 +95,7 @@ namespace AsianOptionsFSharp
                                 runs,
                                 (IAsyncResult result) =>
                                 {
-                                    double price = client.EndPriceAsianOptions(result);
+                                    double price = client.EndPAO(result);
 
                                     // Populate the cell: Cell Id is stored in result.AsyncState
                                     this.Range[(string)result.AsyncState, missing].Value2 = price;
