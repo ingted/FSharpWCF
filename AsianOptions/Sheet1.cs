@@ -70,7 +70,7 @@ namespace AsianOptions
             AutoResetEvent finishedEvt = new AutoResetEvent(false);
             int count = 0;
 
-            SessionStartInfo info = new SessionStartInfo((string) rngHeadNode.Value2, "AsianOptionsService4");
+            SessionStartInfo info = new SessionStartInfo((string) rngHeadNode.Value2, (string)this.Range["B9", this.missing].Value2);
             Stopwatch timer = null;
 
             // Set interface mode so that when creating a session, the program will pop up a credential

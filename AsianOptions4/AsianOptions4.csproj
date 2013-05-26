@@ -9,7 +9,7 @@
     <NoStandardLibraries>false</NoStandardLibraries>
     <RootNamespace>AsianOptions4</RootNamespace>
     <AssemblyName>AsianOptions4</AssemblyName>
-    <VSTO_HostDocumentName>AsianOptionPricingCSharpBehind.xlsx</VSTO_HostDocumentName>
+    <VSTO_HostDocumentName>AsianOptionPricingCSharpBehind4.xlsx</VSTO_HostDocumentName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <DefineConstants>VSTO40</DefineConstants>
     <OfficeApplication>Excel</OfficeApplication>
@@ -123,25 +123,25 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
     <Compile Include="Sheet1.cs">
-      <DependentUpon>AsianOptionPricingCSharpBehind.xlsx</DependentUpon>
+      <DependentUpon>AsianOptionPricingCSharpBehind4.xlsx</DependentUpon>
     </Compile>
     <Compile Include="Sheet1.Designer.cs">
       <DependentUpon>Sheet1.Designer.xml</DependentUpon>
     </Compile>
     <Compile Include="Sheet2.cs">
-      <DependentUpon>AsianOptionPricingCSharpBehind.xlsx</DependentUpon>
+      <DependentUpon>AsianOptionPricingCSharpBehind4.xlsx</DependentUpon>
     </Compile>
     <Compile Include="Sheet2.Designer.cs">
       <DependentUpon>Sheet2.Designer.xml</DependentUpon>
     </Compile>
     <Compile Include="Sheet3.cs">
-      <DependentUpon>AsianOptionPricingCSharpBehind.xlsx</DependentUpon>
+      <DependentUpon>AsianOptionPricingCSharpBehind4.xlsx</DependentUpon>
     </Compile>
     <Compile Include="Sheet3.Designer.cs">
       <DependentUpon>Sheet3.Designer.xml</DependentUpon>
     </Compile>
     <Compile Include="ThisWorkbook.cs">
-      <DependentUpon>AsianOptionPricingCSharpBehind.xlsx</DependentUpon>
+      <DependentUpon>AsianOptionPricingCSharpBehind4.xlsx</DependentUpon>
     </Compile>
     <Compile Include="ThisWorkbook.Designer.cs">
       <DependentUpon>ThisWorkbook.Designer.xml</DependentUpon>
@@ -162,8 +162,8 @@
       <DependentUpon>Sheet2.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />
-    <None Include="AsianOptionPricingCSharpBehind.xlsx" />
-    <None Include="AsianOptions4_TemporaryKey.pfx" />
+    <None Include="AsianOptionPricingCSharpBehind4.xlsx" />
+    <None Include="AsianOptionsKey.pfx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -256,24 +256,24 @@
     <SignManifests>true</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>AsianOptions4_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestKeyFile>AsianOptionsKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>D87B6B242F9E4FFA66496DB76E2916298F763561</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>6C1759F7D7B5CD23C1AC5FFB5B4A64E4BA1A1FDA</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
     <SignAssembly>true</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
-    <AssemblyOriginatorKeyFile>AsianOptions4_TemporaryKey.pfx</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>AsianOptionsKey.pfx</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\OfficeTools\Microsoft.VisualStudio.Tools.Office.targets" Condition="'$(VSToolsPath)' != ''" />
   <ProjectExtensions>
     <VisualStudio>
       <FlavorProperties GUID="{BAA0C2D2-18E2-41B9-852F-F413020CAA33}">
-        <ProjectProperties HostName="AsianOptionPricingCSharpBehind.xlsx" HostPackage="{3F2B7691-D1D1-402F-9370-2704A737CF60}" OfficeVersion="15.0" VstxVersion="4.0" ApplicationType="XLS" Language="CS" TemplatesPath="VSTOTemplates" DebugInfoExeName="C:\Program Files\Microsoft Office\Office15\Excel.exe" DebugInfoCommandLine="/x &quot;[$OUTPUT]AsianOptionPricingCSharpBehind.xlsx&quot;" />
-        <Host Name="Excel Document" Path=".\AsianOptionPricingCSharpBehind.xlsx" GeneratedCodeNamespace="AsianOptions4">
+        <ProjectProperties HostName="AsianOptionPricingCSharpBehind4.xlsx" HostPackage="{3F2B7691-D1D1-402F-9370-2704A737CF60}" OfficeVersion="15.0" VstxVersion="4.0" ApplicationType="XLS" Language="CS" TemplatesPath="VSTOTemplates" DebugInfoExeName="C:\Program Files\Microsoft Office\Office15\Excel.exe" DebugInfoCommandLine="/x &quot;[$OUTPUT]AsianOptionPricingCSharpBehind4.xlsx&quot;" />
+        <Host Name="Excel Document" Path=".\AsianOptionPricingCSharpBehind4.xlsx" GeneratedCodeNamespace="AsianOptions4">
           <HostItem Name="Sheet1" Code="Sheet1.cs" CanonicalName="Sheet1" DisplayName="Sheet1" Blueprint="Sheet1.Designer.xml" GeneratedCode="Sheet1.Designer.cs" />
           <HostItem Name="Sheet2" Code="Sheet2.cs" CanonicalName="Sheet2" DisplayName="Sheet2" Blueprint="Sheet2.Designer.xml" GeneratedCode="Sheet2.Designer.cs" />
           <HostItem Name="Sheet3" Code="Sheet3.cs" CanonicalName="Sheet3" DisplayName="Sheet3" Blueprint="Sheet3.Designer.xml" GeneratedCode="Sheet3.Designer.cs" />
