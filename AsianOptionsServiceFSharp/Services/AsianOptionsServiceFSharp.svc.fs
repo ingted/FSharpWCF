@@ -7,6 +7,8 @@ type AsianOptionsFSharp() =
     interface IAsianOptionsServiceFSharp with
         override this.PriceAsianOptions(initial:float, exercise:float, up:float
             , down:float, interest:float, periods:int32, runs:int32) = 
+            7788.0;
+            (*
             let pricePath = Array.create (periods + 1) 0.0
             let piup = (interest - down) / (up - down)
             let pidown = 1.0 - piup
@@ -35,3 +37,4 @@ type AsianOptionsFSharp() =
             )
 
             (temp.Value / Math.Pow(interest, float periods)) / (float runs);
+            *)

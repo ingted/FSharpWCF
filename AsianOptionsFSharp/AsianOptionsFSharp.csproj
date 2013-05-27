@@ -155,7 +155,6 @@
     </EmbeddedResource>
     <None Include="app.config" />
     <None Include="AsianOptionPricingFSharpBehind.xlsx" />
-    <None Include="AsianOptionsFSharp_TemporaryKey.pfx" />
     <None Include="AsianOptionsKey.pfx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -166,6 +165,8 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Service References\AsianOptionsServiceFSharp\AsianOptionsFSharp.wsdl" />
     <None Include="Service References\AsianOptionsServiceFSharp\AsianOptionsFSharp.xsd">
       <SubType>Designer</SubType>
@@ -173,8 +174,6 @@
     <None Include="Service References\AsianOptionsServiceFSharp\AsianOptionsFSharp1.xsd">
       <SubType>Designer</SubType>
     </None>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="ThisWorkbook.Designer.xml">
       <DependentUpon>ThisWorkbook.cs</DependentUpon>
     </None>
