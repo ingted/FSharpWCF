@@ -155,7 +155,7 @@
     </EmbeddedResource>
     <None Include="app.config" />
     <None Include="AsianOptionPricingFSharpBehind.xlsx" />
-    <None Include="AsianOptionsKey.pfx" />
+    <None Include="AsianOptions.pfx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -222,16 +222,16 @@
     <SignManifests>true</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>AsianOptionsKey.pfx</ManifestKeyFile>
+    <ManifestKeyFile>AsianOptions.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>6C1759F7D7B5CD23C1AC5FFB5B4A64E4BA1A1FDA</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>AA741A84A5B6945DF32C080A3A46E8F681E51CB2</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
     <SignAssembly>true</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
-    <AssemblyOriginatorKeyFile>AsianOptionsKey.pfx</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>AsianOptions.pfx</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\OfficeTools\Microsoft.VisualStudio.Tools.Office.targets" Condition="'$(VSToolsPath)' != ''" />

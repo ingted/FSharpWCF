@@ -14,8 +14,8 @@
     <OfficeApplication>Excel</OfficeApplication>
     <ProjectGuid>{2F6F9785-033C-410E-8022-AD3A579D6F41}</ProjectGuid>
     <SolutionID>5fa5576a-242d-4a61-a77f-decca031f3f1</SolutionID>
-    <ManifestCertificateThumbprint>6C1759F7D7B5CD23C1AC5FFB5B4A64E4BA1A1FDA</ManifestCertificateThumbprint>
-    <ManifestKeyFile>AsianOptionsKey.pfx</ManifestKeyFile>
+    <ManifestCertificateThumbprint>AA741A84A5B6945DF32C080A3A46E8F681E51CB2</ManifestCertificateThumbprint>
+    <ManifestKeyFile>AsianOptions.pfx</ManifestKeyFile>
     <SignManifests>true</SignManifests>
     <IsWebBootstrapper>False</IsWebBootstrapper>
     <FileUpgradeFlags>
@@ -169,7 +169,7 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="AsianOptionPricingCSharpBehind.xlsx" />
-    <None Include="AsianOptionsKey.pfx" />
+    <None Include="AsianOptions.pfx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -285,7 +285,7 @@
     <SignAssembly>true</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
-    <AssemblyOriginatorKeyFile>AsianOptionsKey.pfx</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>AsianOptions.pfx</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
